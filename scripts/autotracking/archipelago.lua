@@ -170,7 +170,7 @@ function apply_slot_data(slot_data)
 
 		itemOption.Active = setOption
 	else
-		print("Marking include_endgame_locations because it is 1, 2 or the goal is Simon or Painted Love")
+		print("Marking include_endgame_locations because it is 1, 2 or the goal is Simon, Painted Love, or Osquio")
 		local itemOption = Tracker:FindObjectForCode("include_endgame_locations")
 		itemOption.Active = 1
 	end
