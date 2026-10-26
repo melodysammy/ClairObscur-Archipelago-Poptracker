@@ -399,27 +399,28 @@ function onLocation(location_id, location_name)
 		end
 		return
 	end
-    if mapping_entry then
-        local location_code = mapping_entry[1]
-        if location_code then
-            local obj = Tracker:FindObjectForCode(location_code)
-            if obj then
-                if location_code:sub(1, 1) == "@" then
-                    obj.AvailableChestCount = obj.AvailableChestCount - 1
-                else
-                    -- increment hosted item
-                    local item_type = mapping_entry[2]
-                    incrementItem(location_code, item_type)
-                end
-            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onLocation: could not find object for code %s", location_code))
-            end
-        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onLocation: skipping location_table with no location_code"))
-        end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	--If there are multiple location codes for this mapping entry, we need to iterate through them
+	for _, location_code in ipairs(mapping_entry) do
+		if location_code then
+			local obj = Tracker:FindObjectForCode(location_code)
+			if obj then
+				if location_code:sub(1, 1) == "@" then
+					obj.AvailableChestCount = obj.AvailableChestCount - 1
+				else
+					-- increment hosted item
+					local item_type = mapping_entry[2]
+					incrementItem(location_code, item_type)
+				end
+			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+				print(string.format("onLocation: could not find object for code %s", location_code))
+			end
+		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print(string.format("onLocation: skipping location_table with no location_code"))
+		end
+	end
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: skipping empty location_table"))
-    end
+	end
 end
 
 -- called when a locations is scouted
@@ -621,7 +622,8 @@ function updateHint(hint, sections_to_update)
 	--get the "highest" highlight value pre section
 	for _, location_table in pairs(mapping_entry) do
 		if location_table then
-			local location_code = location_table[1]
+			-- use the string itself, or the first code in the table.
+			local location_code = type(location_table) == "string" and location_table or location_table[1]
 			-- skip hosted items, they don't support Highlight
 			if location_code and location_code:sub(1, 1) == "@" then
 				-- see if we already set a Highlight for this section

@@ -16,7 +16,7 @@ ITEM_MAPPING = {
     [330014] = {"rock", "progressive"},
     [330015] = {"PaintBreak", "toggle"},
     [330016] = {"BourgeonSkin", "toggle"},
-  --[330017] = {"Eternal Ice", "toggle"},
+    [330017] = {"Eternal Ice", "toggle"},
   --[330018] = {"Intact Mine", "toggle"},
     [330019] = {"FamilyCanvas", "toggle"},
   --[330020] = {"Mushroom", "toggle"},
@@ -452,5 +452,5 @@ ITEM_MAPPING = {
     [330450] = {"Merchant_Extra_FM_Fusoka", "toggle"},
     [330451] = {"Merchant_Extra_RD_Grour", "toggle"},
     [330452] = {"Merchant_Extra_ENS_Anthonypo", "toggle"},
-    [330452] = {"Merchant_Extra_VD_Najabla", "toggle"}
+    [330453] = {"Merchant_Extra_VD_Najabla", "toggle"}
 }

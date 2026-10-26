@@ -4,7 +4,11 @@ LOCATION_MAPPING = {
     [333302]= {"@Entrance - Ancient Sanctuary/Giant Bell Alley - Up ramp after boss"},
     [333303]= {"@Entrance - Ancient Sanctuary/Giant Bell Alley - Before Expedition Flag near dismantled Gestral"},
     [333304]= {"@Entrance - Ancient Sanctuary/Gestral Totem - Base of the totem"},
-    [333305]= {"@Entrance - Ancient Sanctuary/Ancient Sanctuary or Forgotten Battlefield: Entrance - Across bridge or Fort Ruins - In left ruins near dead end"}, -- multiple location
+    [333305]= {
+        "@Entrance - Multiple Locations/Ancient Sanctuary or Forgotten Battlefield: Entrance - Across bridge or Fort Ruins - In left ruins near dead end",
+        "@Entrance - Ancient Sanctuary/Ancient Sanctuary or Forgotten Battlefield: Entrance - Across bridge or Fort Ruins - In left ruins near dead end",
+        "@Entrance - Forgotten Battlefield/Ancient Sanctuary or Forgotten Battlefield: Entrance - Across bridge or Fort Ruins - In left ruins near dead end"
+    }, -- multiple location
     [333306]= {"@Entrance - Ancient Sanctuary/Sanctuary Maze - On path to flag 1 shortcut"},
     [333307]= {"@Entrance - Ancient Sanctuary/Sanctuary Maze - On cliff after Mime"},
     [333308]= {"@Entrance - Ancient Sanctuary/Sanctuary Maze - In hut near Mime"},
@@ -232,9 +236,9 @@ LOCATION_MAPPING = {
     [333530]= {"@Overview - Manor/Manor Door: From Frozen Hearts - At the harp"},
     [333531]= {"@Overview - Manor/Manor Door: From First Continent Sea - Behind fake bookshelf"},
     [333532]= {"@Entrance - The Monolith/Tainted Meadows - Detour near Eveque"},
-    [333535]= {"@Entrance - The Monolith/Tainted Meadows - After Aline memory"},
-    [333534]= {"@Entrance - The Monolith/Tainted Meadows - Paint Cage"},
     [333533]= {"@Entrance - The Monolith/Tainted Cliffs - In front of bastard Mime room zipline"},
+    [333534]= {"@Entrance - The Monolith/Tainted Meadows - Paint Cage"},
+    [333535]= {"@Entrance - The Monolith/Tainted Meadows - After Aline memory"},
     [333536]= {"@Entrance - The Monolith/Tainted Meadows - Near Eveque"},
     [333537]= {"@Entrance - The Monolith/Tainted Waters - Behind Chromatic Bourgeon"},
     [333538]= {"@Entrance - The Monolith/Tainted Waters - Right path in coral reef"},
@@ -405,7 +409,11 @@ LOCATION_MAPPING = {
     [333703]= {"@Entrance - The Chosen Path/Complete all Canvases"},
     [333704]= {"@Entrance - Sky Island/At end of area"},
     [333705]= {"@Entrance - Isle of the Eyes/Item 1"},
-    [333706]= {"@Entrance - Multiple Locations/Isle of the Eyes or The Crows: Item 2 or Item"},
+    [333706]= {
+        "@Entrance - Multiple Locations/Isle of the Eyes or The Crows: Item 2 or Item",
+        "@Entrance - Isle of the Eyes/Isle of the Eyes or The Crows: Item 2 or Item",
+        "@Entrance - The Crows/Isle of the Eyes or The Crows: Item 2 or Item"
+    },
     [333707]= {"@Entrance - Floating Cemetery/Upper level overlooking entrance"},
     [333708]= {"@Entrance - Floating Cemetery/Near barrels"},
     [333709]= {"@Entrance - Floating Cemetery/Defeat the Nevron"},
@@ -429,8 +437,8 @@ LOCATION_MAPPING = {
     [333727]= {"@Overview - Mini Levels/Twilight Quarry: Item"},
     [333728]= {"@Overview - Mini Levels/The Fountain: In front of Blanche"},
     [333729]= {"@Overview - Mini Levels/Flying Casino: Item"},
-    [333731]= {"@Entrance - The Carousel/In boxes"},
     [333730]= {"@Entrance - The Carousel/Left of Expedition Flag"},
+    [333731]= {"@Entrance - The Carousel/In boxes"},
     [333732]= {"@Overview - Mini Levels/White Sands: Next to Expedition Flag"},
     [333733]= {"@Overview - Mini Levels/White Sands: In front of boat overlooking Manor"},
     [333734]= {"@Entrance - Sacred River/Item"},
@@ -568,8 +576,13 @@ LOCATION_MAPPING = {
     [333866]= {"@Entrance - Yellow Harvest/Harvester's Hollow - Peninsula facing sunken building"},
     [333867]= {"@Entrance - Yellow Harvest/Harvester's Hollow - On balcony of sunken building"},
     [333868]= {"@Entrance - Yellow Harvest/Harvester's Hollow - Near tent by sunken building"},
-    [333869]= {"@Entrance - Esquie's Nest/Get Outta My Way! - Go right from Sunniso"},
-    [333870]= {"@Overview - Camp/Gestrals - Break Paint Spike"},    [333871]= {"@Entrance - Spring Meadows/Entrance - In the waterfall behind start"},
+    [333869]= {
+        "@Entrance - Multiple Locations/Esquie's Nest or Monolith: Get Outta My Way! - Go right from Sunniso or Tainted Lumiere - Left before Expedition Flag",
+        "@Entrance - Esquie's Nest/Esquie's Nest or Monolith: Get Outta My Way! - Go right from Sunniso or Tainted Lumiere - Left before Expedition Flag",
+        "@Entrance - The Monolith/Esquie's Nest or Monolith: Get Outta My Way! - Go right from Sunniso or Tainted Lumiere - Left before Expedition Flag"
+    },
+    [333870]= {"@Overview - Camp/Gestrals - Break Paint Spike"},
+    [333871]= {"@Entrance - Spring Meadows/Entrance - In the waterfall behind start"},
     [333872]= {"@Entrance - Continent/Dive - East of Lumiere"},
     [333873]= {"@Entrance - Continent/Dive - Near The Meadows"},
     [333874]= {"@Entrance - Continent/Dive - Near Gestral Beach Tower"},

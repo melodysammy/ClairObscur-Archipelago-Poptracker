@@ -12,7 +12,7 @@
             
             {
                 "name": "Golgra",
-                "access_rules": ["[paintedpower]"]
+                "access_rules": ["Verso,Monoco,[paintedpower]","[Verso],Monoco,[paintedpower]","[Monoco],Verso,[paintedpower]"]
             },
 
             {
@@ -57,7 +57,7 @@
             },
             {
                 "name": "Gestral Merchant - Fight",
-                "access_rules": [],
+                "access_rules": ["[paintedpower]"],
                 "visibility_rules": ["shopsanity"]
             },
             {

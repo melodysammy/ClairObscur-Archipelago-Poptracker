@@ -62,6 +62,12 @@
     "type": "toggle"
   },
   {
+    "name": "Eternal Ice",
+    "codes": "Eternal Ice",
+    "img": "images/items/eternal_ice.png",
+    "type": "toggle"
+  },
+  {
     "name": "Free Aim",
     "codes": "FreeAim",
     "img": "images/items/free_aim.png",
@@ -452,12 +458,6 @@
   {
     "name": "Merchant (Lumiere): Cribappa - Extra shop unlock",
     "codes": "Merchant_Extra_LUM_Cribappa",
-    "img": "images/items/gestral.png",
-    "type": "toggle"
-  },
-  {
-    "name": "Merchant (Monoco's Station): Grandis - Extra shop unlock",
-    "codes": "Merchant_Extra_MS_Grandis",
     "img": "images/items/gestral.png",
     "type": "toggle"
   },

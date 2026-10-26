@@ -60,6 +60,23 @@ function has_beast_part(count)
     return has_at_least("BeastPart", tonumber(count))
 end
 
+function show_endgame_locations()
+    return has("include_endgame_locations") or has("goal_simon") or has("goal_osquio")
+end
+
+function has_five_characters()
+    local characters = {"Gustave", "Maelle", "Lune", "Sciel", "Monoco", "Verso"}
+    local count = 0
+
+    for _, character in ipairs(characters) do
+        if has(character) then
+            count = count + 1
+        end
+    end
+
+    return count >= 5
+end
+
 function has_rock_crystal(count)
     return has_at_least("RockCrystal", tonumber(count))
 end
@@ -99,7 +116,7 @@ function south_sea()
 end
 
 function north_sea()
-    return (has("swim") and has("coral")) or has("fly")
+    return (has("coral")) or has("fly")
 end
 
 function firstcont_south()
@@ -107,7 +124,7 @@ function firstcont_south()
 end
 
 function firstcont_north()
-    return (has("swim") or has("FlyingWaters")) or has("fly")
+    return (has("swim") or (has("FlyingWaters") and calculate_picto_count_from_level(3)) or has("fly")) --Picto level 3 gotten from the flying_waters.json in the logic folder
 end
 
 function firstcont_north_and_esquie()
@@ -115,15 +132,15 @@ function firstcont_north_and_esquie()
 end
 
 function secondcont_south()
-    return (south_sea() and has("ForgottenBattlefield")) or north_sea()
+    return (south_sea() and has("ForgottenBattlefield") and calculate_picto_count_from_level(8)) or north_sea() --Picto level 8 gotten from the forgotten_battlefield.json in the logic folder
 end
 
 function secondcont_nw()
-    return (secondcont_south() and has("MonocosStation")) or has("coral") or has("fly")
+    return (secondcont_south() and has("MonocosStation") and calculate_picto_count_from_level(9)) or has("coral") or has("fly") --Picto level 9 gotten from the monocos_station.json in the logic folder
 end
 
 function secondcont_ne()
-    return (secondcont_south() and has("MonocosStation")) or has("fly")
+    return (secondcont_south() and has("MonocosStation") and calculate_picto_count_from_level(9)) or has("fly") --Picto level 9 gotten from the monocos_station.json in the logic folder
 end
 
 function sky()
@@ -135,7 +152,7 @@ function sky_no_pp()
 end
 
 function dive()
-    return has("swim") and has("dive")
+    return has("dive")
 end
 
 -- Shopsanity logic --
@@ -161,4 +178,3 @@ function extra_shop_count(count)
         return false
     end
 end
-

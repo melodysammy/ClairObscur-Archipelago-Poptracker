@@ -115,8 +115,7 @@
                 "visibility_rules": ["EnableFlags"]
             }
         ],
-        "access_rules": ["$secondcont_south,MonocosStation",
-                         "$secondcont_ne,MonocosStation",
-                         "$north_sea,MonocosStation"]
+        "access_rules": ["$secondcont_south,MonocosStation,[$calculate_picto_count_from_level|9]",
+                         "swim,ForgottenBattlefield,MonocosStation,[$calculate_picto_count_from_level|9]"]
     }
 ]
