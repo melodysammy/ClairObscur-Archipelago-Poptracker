@@ -455,15 +455,15 @@
     "img": "images/items/gestral.png",
     "type": "toggle"
   },
-   {
-    "name": "Merchant (Monoco's Station): Grandis - Extra shop unlock",
-    "codes": "Merchant_Extra_MS_Grandis",
+  {
+    "name": "Merchant (Lumiere): Cribappa - Extra shop unlock",
+    "codes": "Merchant_Extra_LUM_Cribappa",
     "img": "images/items/gestral.png",
     "type": "toggle"
   },
   {
-    "name": "Merchant (Lumiere): Cribappa - Extra shop unlock",
-    "codes": "Merchant_Extra_LUM_Cribappa",
+    "name": "Merchant (Monoco's Station): Grandis - Extra shop unlock",
+    "codes": "Merchant_Extra_MS_Grandis",
     "img": "images/items/gestral.png",
     "type": "toggle"
   },
